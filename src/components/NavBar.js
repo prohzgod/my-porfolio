@@ -4,16 +4,14 @@ import {
   Flex,
   Heading,
   IconButton,
-  Link,
-  Spacer,
+  Stack,
   Text,
   useColorMode,
   useColorModeValue,
 } from "@chakra-ui/react";
 import React from "react";
-import { FaGithub, FaLinkedin, FaMoon, FaSun } from "react-icons/fa";
+import { FaMoon, FaSun } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-import WorkPage from "../pages/WorkPage";
 
 function NavBar() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -38,25 +36,34 @@ function NavBar() {
       >
         <Flex align="center" mr={5}>
           <NavLink to="/">
-            <Heading as="h1" size="lg" letterSpacing={"tighter"}>
+            <Heading as="h4" size="md" letterSpacing={"tighter"}>
               Tuấn Anh
             </Heading>
           </NavLink>
         </Flex>
-
-        <NavLink to="/work">
-          <Text size="md" ml={2}>
-            Work
-          </Text>
-        </NavLink>
-        <Spacer />
-        <IconButton
-          size="md"
-          icon={colorMode === "light" ? <FaMoon /> : <FaSun />}
-          ml={2}
-          isRound="true"
-          onClick={toggleColorMode}
-        />
+        <Stack
+          direction={{ base: "column", md: "row" }}
+          display={{ base: "none", md: "flex" }}
+          width={{ base: "full", md: "auto" }}
+          alignItems="center"
+          flexGrow={1}
+          mt={{ base: 4, md: 0 }}
+        >
+          <NavLink to="/work">
+            <Text as="h4" size="md">
+              Works
+            </Text>
+          </NavLink>
+        </Stack>
+        <Box flex={1} align="right">
+          <IconButton
+            size="md"
+            icon={colorMode === "light" ? <FaMoon /> : <FaSun />}
+            ml={2}
+            isRound="true"
+            onClick={toggleColorMode}
+          />
+        </Box>
       </Container>
     </Box>
   );

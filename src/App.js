@@ -1,4 +1,10 @@
-import { IconButton, useColorMode, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  IconButton,
+  useColorMode,
+  VStack,
+} from "@chakra-ui/react";
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import WorkPage from "./pages/WorkPage";
@@ -9,13 +15,13 @@ function App() {
   const isDark = colorMode === "dark";
 
   return (
-    <VStack paddingX={20} paddingY={5}>
+    <Box as="main">
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/work" element={<WorkPage />} />
       </Routes>
-    </VStack>
+    </Box>
   );
 }
 
