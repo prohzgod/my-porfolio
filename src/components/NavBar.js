@@ -35,7 +35,7 @@ function NavBar() {
         justify="space-between"
       >
         <Flex align="center" mr={5}>
-          <NavLink to="/">
+          <NavLink to="/my-porfolio">
             <Heading as="h4" size="md" letterSpacing={"tighter"}>
               Tuấn Anh
             </Heading>

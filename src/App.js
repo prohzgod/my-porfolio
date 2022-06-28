@@ -12,7 +12,7 @@ function App() {
     <Box as="main">
       <NavBar />
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/my-porfolio" element={<HomePage />} />
         <Route path="/work" element={<WorkPage />} />
       </Routes>
     </Box>
