@@ -4,13 +4,14 @@ import {
   Flex,
   Heading,
   IconButton,
+  Link,
   Stack,
   Text,
   useColorMode,
   useColorModeValue,
 } from "@chakra-ui/react";
 import React from "react";
-import { FaMoon, FaSun } from "react-icons/fa";
+import { FaGoogleDrive, FaMoon, FaSun } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 function NavBar() {
@@ -49,11 +50,35 @@ function NavBar() {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <NavLink to="/work">
-            <Text as="h4" size="md">
+          <NavLink to="/works">
+            <Text
+              as="h4"
+              size="md"
+              marginRight="10px"
+              _hover={{
+                borderBottom: "1px",
+                borderBottomColor: "black",
+              }}
+            >
               Works
             </Text>
           </NavLink>
+          <Link
+            href="https://drive.google.com/file/d/1WmLJLmi47KTFC-Im7ZyUxn5HGCM7eC4q/view?usp=sharing"
+            _hover={{
+              borderBottom: "1px",
+              borderBottomColor: "black",
+            }}
+          >
+            <FaGoogleDrive
+              style={{
+                display: "inline",
+                marginBottom: "-3px",
+                paddingRight: "2px",
+              }}
+            />
+            My CV
+          </Link>
         </Stack>
         <Box flex={1} align="right">
           <IconButton

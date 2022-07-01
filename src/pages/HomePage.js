@@ -2,7 +2,6 @@ import {
   Box,
   Container,
   Heading,
-  Image,
   Link,
   List,
   ListIcon,
@@ -10,11 +9,13 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
+import { Image } from "@chakra-ui/image";
 import React from "react";
 import { FaFacebookSquare, FaGithub, FaLinkedin } from "react-icons/fa";
 import Section from "../components/Section";
 import Paragraph from "../components/Paragraph";
 import { BioSection, BioYear } from "../components/Bio";
+import avatar from "../public/image/avatar.jpg";
 
 function HomePage() {
   return (
@@ -53,7 +54,7 @@ function HomePage() {
               borderRadius="full"
               boxSize="100px"
               objectFit="cover"
-              src="/ava1.jpg"
+              src={avatar}
               alt="Avatar"
             />
           </Box>
