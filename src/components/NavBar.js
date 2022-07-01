@@ -55,7 +55,7 @@ function NavBar() {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <NavLink to="/my-porfolio/works">
+          <NavLink to="/works">
             <Text
               as="h4"
               size="md"
@@ -104,7 +104,7 @@ function NavBar() {
                 <Link href="/my-porfolio">
                   <MenuItem as={Link}>Home</MenuItem>
                 </Link>
-                <Link href="/my-porfolio/works">
+                <Link href="/works">
                   <MenuItem as={Link}>Works</MenuItem>
                 </Link>
                 <MenuItem
