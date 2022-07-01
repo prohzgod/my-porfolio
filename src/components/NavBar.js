@@ -57,7 +57,7 @@ function NavBar() {
               marginRight="10px"
               _hover={{
                 borderBottom: "1px",
-                borderBottomColor: "black",
+                borderBottomColor: useColorModeValue("black", "white"),
               }}
             >
               Works
@@ -67,8 +67,9 @@ function NavBar() {
             href="https://drive.google.com/file/d/1WmLJLmi47KTFC-Im7ZyUxn5HGCM7eC4q/view?usp=sharing"
             _hover={{
               borderBottom: "1px",
-              borderBottomColor: "black",
+              borderBottomColor: useColorModeValue("black", "white"),
             }}
+            isExternal
           >
             <FaGoogleDrive
               style={{
