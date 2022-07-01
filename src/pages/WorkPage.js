@@ -1,10 +1,4 @@
-import {
-  Box,
-  Container,
-  Heading,
-  GridItem,
-  SimpleGrid,
-} from "@chakra-ui/react";
+import { Box, Container, Heading, SimpleGrid } from "@chakra-ui/react";
 import React from "react";
 import Section from "../components/Section";
 import { WorkGridItem } from "../components/Card";

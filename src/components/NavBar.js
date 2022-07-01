@@ -5,6 +5,10 @@ import {
   Heading,
   IconButton,
   Link,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
   Stack,
   Text,
   useColorMode,
@@ -12,11 +16,12 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { FaGoogleDrive, FaMoon, FaSun } from "react-icons/fa";
+import { HamburgerIcon } from "@chakra-ui/icons";
 import { NavLink } from "react-router-dom";
 
 function NavBar() {
   const { colorMode, toggleColorMode } = useColorMode();
-  const isDark = colorMode === "dark";
+  // const isDark = colorMode === "dark";
 
   return (
     <Box
@@ -86,9 +91,32 @@ function NavBar() {
             size="md"
             icon={colorMode === "light" ? <FaMoon /> : <FaSun />}
             ml={2}
-            isRound="true"
             onClick={toggleColorMode}
           />
+          <Box ml={2} display={{ base: "inline-block", md: "none" }}>
+            <Menu isLazy id="navbar-menu">
+              <MenuButton
+                as={IconButton}
+                icon={<HamburgerIcon />}
+                aria-label="Options"
+              />
+              <MenuList>
+                <Link href="/my-porfolio">
+                  <MenuItem as={Link}>Home</MenuItem>
+                </Link>
+                <Link href="/works">
+                  <MenuItem as={Link}>Works</MenuItem>
+                </Link>
+                <MenuItem
+                  as={Link}
+                  href="https://drive.google.com/file/d/1WmLJLmi47KTFC-Im7ZyUxn5HGCM7eC4q/view?usp=sharing"
+                  isExternal
+                >
+                  My CV
+                </MenuItem>
+              </MenuList>
+            </Menu>
+          </Box>
         </Box>
       </Container>
     </Box>
