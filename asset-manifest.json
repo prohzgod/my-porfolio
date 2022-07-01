@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/my-porfolio/static/js/main.185b6ddc.js",
+    "main.js": "/my-porfolio/static/js/main.8ce40854.js",
     "static/media/shopmanager.jpg": "/my-porfolio/static/media/shopmanager.435b3e7b62606e6e21e4.jpg",
     "static/media/avatar.jpg": "/my-porfolio/static/media/avatar.1c4810f61b7bd8e4afe5.jpg",
     "static/media/Findinggame.jpg": "/my-porfolio/static/media/Findinggame.b156ea66cbe5e8818dad.jpg",
     "static/media/rfid.jpg": "/my-porfolio/static/media/rfid.8a307dd07c4e7cb895b6.jpg",
     "index.html": "/my-porfolio/index.html",
-    "main.185b6ddc.js.map": "/my-porfolio/static/js/main.185b6ddc.js.map"
+    "main.8ce40854.js.map": "/my-porfolio/static/js/main.8ce40854.js.map"
   },
   "entrypoints": [
-    "static/js/main.185b6ddc.js"
+    "static/js/main.8ce40854.js"
   ]
 }
