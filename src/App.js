@@ -13,7 +13,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/my-porfolio" element={<HomePage />} />
-        <Route path="/works" element={<WorkPage />} />
+        <Route path="/my-porfolio/works" element={<WorkPage />} />
       </Routes>
     </Box>
   );
