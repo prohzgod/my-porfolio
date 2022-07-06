@@ -10,9 +10,7 @@ function WorkPage() {
   return (
     <Container maxW="container.sm" pt={14} px={{ base: 5, md: 16 }}>
       <Section delay={0.1}>
-        <Box width="100%" bg="blue.200" height="200px" mt="10px">
-          {" "}
-        </Box>
+        <Box width="100%" bg="blue.200" height="200px" mt="10px"></Box>
       </Section>
       <Section delay={0.2}>
         <Heading as="h3" fontSize="lg" pt="10px" pb="10px">

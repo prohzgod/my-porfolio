@@ -43,7 +43,7 @@ function NavBar() {
         <Flex align="center" mr={5}>
           <NavLink to="/my-porfolio">
             <Heading as="h4" size="md" letterSpacing={"tighter"}>
-              Tuấn Anh
+              Alfred Nguyen
             </Heading>
           </NavLink>
         </Flex>
@@ -104,9 +104,9 @@ function NavBar() {
                 <Link href="/my-porfolio">
                   <MenuItem as={Link}>Home</MenuItem>
                 </Link>
-                <Link href="/my-porfolio/works">
-                  <MenuItem as={Link}>Works</MenuItem>
-                </Link>
+                <NavLink to="/my-porfolio/works">
+                  <MenuItem>Works</MenuItem>
+                </NavLink>
                 <MenuItem
                   as={Link}
                   href="https://drive.google.com/file/d/1WmLJLmi47KTFC-Im7ZyUxn5HGCM7eC4q/view?usp=sharing"

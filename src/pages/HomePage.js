@@ -16,10 +16,12 @@ import Section from "../components/Section";
 import Paragraph from "../components/Paragraph";
 import { BioSection, BioYear } from "../components/Bio";
 import avatar from "../public/image/avatar.jpg";
+import Model from "../components/Model";
 
 function HomePage() {
   return (
     <Container maxW="container.sm" pt={14} px={{ base: 5, md: 16 }}>
+      <Section delay={0.1}></Section>
       <Section delay={0.1}>
         <Text
           fontSize="lg"
